@@ -1,0 +1,261 @@
+/* Live background animation */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #011627, #004e92, #006e9a, #011627);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    height: 130vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Background animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    transition: all 0.3s ease-in-out;
+}
+
+.flashing-red {
+    animation: flashRed 1s infinite;
+    background-color: rgba(255, 0, 0, 0.4) !important;
+    border: 2px solid red;
+}
+
+@keyframes flashRed {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.alert {
+    min-height: 60px;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: scale(1.05);
+}
+
+
+.glass-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.glass-card p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/*  about the alert system */
+
+/* .alert {
+    background-color: rgba(255, 0, 0, 0.6);
+    border: solid rgb(255, 0, 0) 2px;
+    color: white;
+    margin-bottom: 50px;
+} */
+
+/* .alert {
+    background-color: rgba(255, 106, 0, 0.6);
+    border: solid rgb(255, 123, 0) 2px;
+    color: white;
+    margin-bottom: 50px;
+} */
+
+
+.alert-history {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: solid rgba(255, 255, 255, 0.5) 1px;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.history-item {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*  adjusting the width for other devices accordingly to display it perfectly */
+
+@media (max-width: 1024px) {
+    .glass-card {
+        padding: 18px;
+        border-radius: 9px;
+    }
+
+    .glass-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .glass-card p {
+        font-size: 1.1rem;
+    }
+
+    .alert {
+        font-size: 1.1rem;
+        padding: 12px;
+    }
+}
+
+
+@media (max-width: 768px),
+(width:768px) {
+    body {
+        height: 160vh;
+    }
+
+    .row {
+        margin-top: 20px;
+    }
+
+    .row .col-md-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .glass-card {
+
+        padding: 5px;
+        width: 300px;
+        border-radius: 8px;
+        margin: 10px;
+    }
+
+    .glass-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .glass-card p {
+        font-size: 1rem;
+    }
+
+    .alert {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .row {
+        margin-top: 20px;
+    }
+
+
+    .row .col-md-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .glass-card {
+
+        padding: 5px;
+        width: 240px;
+        border-radius: 8px;
+        margin: 10px;
+    }
+
+    .glass-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .glass-card p {
+        font-size: 0.9rem;
+    }
+
+    .alert {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 375px) {
+    .glass-card {
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .glass-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .glass-card p {
+        font-size: 0.85rem;
+    }
+
+    .alert {
+        font-size: 0.85rem;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 320px) {
+    .glass-card {
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+    .glass-card h3 {
+        font-size: 1rem;
+    }
+
+    .glass-card p {
+        font-size: 0.8rem;
+    }
+
+    .alert {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+}
