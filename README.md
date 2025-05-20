@@ -36,4 +36,7 @@ The **EV Battery Monitoring Website** is designed to:
 
 👉 [Click here to see the website](https://aditya11ak.github.io/EVbatteryMonitoringWebsite/)
 
+📂 [Click here to view the backend Python code implemented in Google Colab](https://colab.research.google.com/drive/1WUSKfOLg2hgK0TLz9sfaUsbowwvNwZdB?usp=sharing)
+
+
 
