@@ -31,9 +31,9 @@ The **EV Battery Monitoring Website** is designed to:
   - Threshold-based condition checks from research papers
 - **Deployment**: GitHub Pages
 
-## 🚀 Setup Instructions
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Aditya11ak/EVbatteryMonitoringWebsite.git
-   cd EVbatteryMonitoringWebsite
+## 🔗 Live Demo
+
+👉 [Click here to see the website](https://aditya11ak.github.io/EVbatteryMonitoringWebsite/)
+
+
