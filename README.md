@@ -31,6 +31,10 @@ The **EV Battery Monitoring Website** is designed to:
   - Threshold-based condition checks from research papers
 - **Deployment**: GitHub Pages
 
+## ℹ️ Important Instructon!
+- As this project requires hardware to be connected to EV to get the live data.
+- This project is currently not connected to the EV.
+- So it is giving you previously stored data. 
 
 ## 🔗 Live Demo
 
