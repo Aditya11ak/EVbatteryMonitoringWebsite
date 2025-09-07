@@ -148,8 +148,7 @@ body {
 }
 
 
-@media (max-width: 768px),
-(width:768px) {
+@media (max-width: 768px){
     body {
         height: 160vh;
     }
@@ -186,9 +185,9 @@ body {
     }
 
     #maintenance-card {
-        margin-left: auto;
-        margin-right: auto;
-    }
+        margin: 0 auto;  
+        display: block;   
+    }    
 }
 
 @media (max-width: 425px) {
@@ -263,4 +262,5 @@ body {
         font-size: 0.8rem;
         padding: 5px;
     }
+
 }
