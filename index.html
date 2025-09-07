@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battery Monitoring System</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div
+        id="maintenance-card"
+        class="glass-card mb-3 text-white"
+        style="display: none"
+      >
+        <h3>Maintenance Status</h3>
+        <p id="maintenance-score">Score: --%</p>
+        <p id="maintenance-reason">Reason: --</p>
+      </div>
+      <div class="alert"></div>
+      <h1 class="text-center my-4 text-white">Battery Monitoring System</h1>
+
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-3">
+          <div class="glass-card">
+            <h3>Voltage</h3>
+            <p id="voltage">Loading...</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-3">
+          <div class="glass-card">
+            <h3>Current</h3>
+            <p id="current">Loading...</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-3">
+          <div class="glass-card">
+            <h3>Temperature</h3>
+            <p id="temperature">Loading...</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-md-3">
+          <div class="glass-card">
+            <h3>Humidity</h3>
+            <p id="humidity">Loading...</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alert History Section -->
+      <br /><br />
+      <h2 class="text-white mt-4">Alert History</h2>
+      <div id="alert-history" class="alert-history text-white">
+        Loading alert history...
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script type="module" src="./logic.js"></script>
+  </body>
+</html>
