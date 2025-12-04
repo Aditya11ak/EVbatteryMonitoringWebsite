@@ -2,6 +2,14 @@
 
 A real-time web-based solution for monitoring the internal environment and performance of Electric Vehicle (EV) batteries using sensor data. This project was developed as part of our Final Year Engineering Project.
 
+
+## 🔗 Live Demo
+
+👉 [Click here to see the website](https://aditya11ak.github.io/EVbatteryMonitoringWebsite/)
+
+📂 [Click here to view the backend Python code implemented in Google Colab](https://colab.research.google.com/drive/1WUSKfOLg2hgK0TLz9sfaUsbowwvNwZdB?usp=sharing)
+
+
 ## 🚗 Project Overview
 
 The **EV Battery Monitoring Website** is designed to:
@@ -33,14 +41,28 @@ The **EV Battery Monitoring Website** is designed to:
 
 ## ℹ️ Important Instructon!
 - As this project requires hardware to be connected to EV to get the live data.
-- This project is currently not connected to the EV.
-- So it is giving you previously stored data. 
+- So it is giving you previously stored data which is currently present in the firebase.
 
-## 🔗 Live Demo
+## 🚗 Project Minute Details.
 
-👉 [Click here to see the website](https://aditya11ak.github.io/EVbatteryMonitoringWebsite/)
+- NORMAL (🟢)
+├─ No alerts
+└─ No action needed
 
-📂 [Click here to view the backend Python code implemented in Google Colab](https://colab.research.google.com/drive/1WUSKfOLg2hgK0TLz9sfaUsbowwvNwZdB?usp=sharing)
+WARNING (🟡)
+├─ Single range violation OR
+├─ Mild ML anomaly OR
+├─ Sudden rate-of-change
+└─ Monitor closely
+
+CRITICAL (🔴)
+├─ Severe ML anomaly (very confident) OR
+├─ Sequence anomaly (2+ consecutive) OR
+├─ Multiple system layers triggered
+└─ Immediate action required
+
+
+
 
 
 
